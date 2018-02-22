@@ -61,7 +61,7 @@ body {
 	.display-1 {
 	font-size: 3.4rem;
 	font-size: calc( 2.1374999999999997rem + (4.25 - 2.1374999999999997) * ((100vw - 20rem) / (48 - 20)));
-	line-height: calc( 1.4 * (2.1374999999999997rem + (4.25 - 2.1374999999999997) * ((100vw - 20rem) / (48 - 20))));
+	line-height: calc( 1.4 * (2.374999999999997rem + (-14.50 - 2.1374999999999997) * ((100vw - 20rem) / (48 - 20))));
 	}
 	.display-2 {
 	font-size: 2.4rem;
@@ -688,7 +688,7 @@ body {
 	.mbr-form .input-group-btn a.btn:hover {
 	box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.2);
 	}
-	.mbr-form .input-group-btn button[type="submit"] {
+	.mbr-form .input-group-btn button[type="button"] {
 	border-radius: 100px !important;
 	padding: 1rem 3rem;
 	}
@@ -723,7 +723,7 @@ body {
 	}
 	@media (max-width: 767px) {
 	.btn {
-	font-size: .75rem !important;
+	font-size: 1.0rem !important;
 	}
 	.btn .mbr-iconfont {
 	font-size: 1rem !important;
@@ -2302,7 +2302,7 @@ body {
 	}
 	}
 	.section_busi_2 {
-	padding-top: 90px;
+	padding-top: 0px;
 	padding-bottom: 90px;
 	background-color: #fafafa;
 
@@ -2603,7 +2603,7 @@ body {
 	width: 60%;
 	}
 	.section_pricing {
-	padding-top: 90px;
+	padding-top: 30px;
 	padding-bottom: 90px;
 	background: #fafafa;
 	}
@@ -2640,13 +2640,26 @@ body {
 	.section_pricing .plan-header {
 	padding-left: 1rem;
 	padding-right: 1rem;
+	border-top-right-radius: 25px;
+	border-top-left-radius: 25px;
+
 	}
 	.section_pricing .plan-header,
-	.section_pricing .plan-body {
+	.section_pricing  {
 	background-color: #fff;
 	}
+	
+	.plan-body .plan-list {
+	background-color: #fff;
+	border-bottom-left-radius : 25px;
+	}
+	
+	.plan-list li {
+		style ="
+    padding-bottom: 10% ;"
+	}
 	.section_pricing .price-figure {
-	font-weight: 700;
+	font-weight: 70;
 	color: #232323;
 	}
 	.section_pricing .price-value {
@@ -2778,7 +2791,7 @@ body {
 	text-align: center;
 	}
 	.section_subscribe {
-	padding-top: 90px;
+	padding-top: 0px;
 	padding-bottom: 90px;
 	background-color: #ffffff;
 	}
